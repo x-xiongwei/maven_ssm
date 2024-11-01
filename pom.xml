@@ -26,7 +26,7 @@
     <dependency>    
         <groupId>org.slf4j</groupId>    
         <artifactId>slf4j-api</artifactId>    
-        <version>1.7.12</version>    
+        <version>1.7.36</version>    
     </dependency>    
     <dependency>    
         <groupId>org.slf4j</groupId>    
@@ -187,16 +187,13 @@
                 </goals>  
                 <configuration>  
                     <transformers>  
-                        <transformer  
-                            implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">  
+                        <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">  
                             <resource>META-INF/spring.handlers</resource>  
                         </transformer>  
-                        <transformer  
-                            implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">  
+                        <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">  
                             <mainClass>com.maven.ssm.Main</mainClass>  
                         </transformer>  
-                        <transformer  
-                            implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">  
+                        <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">  
                             <resource>META-INF/spring.schemas</resource>  
                         </transformer>  
                     </transformers>  
