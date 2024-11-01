@@ -105,7 +105,7 @@
     <dependency>
 	    <groupId>org.aspectj</groupId>
 	    <artifactId>aspectjweaver</artifactId>
-	    <version>1.8.10</version>
+	    <version>1.9.22.1</version>
 	</dependency>
     <dependency>
         <groupId>org.springframework</groupId>
@@ -187,16 +187,13 @@
                 </goals>  
                 <configuration>  
                     <transformers>  
-                        <transformer  
-                            implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">  
+                        <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">  
                             <resource>META-INF/spring.handlers</resource>  
                         </transformer>  
-                        <transformer  
-                            implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">  
+                        <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">  
                             <mainClass>com.maven.ssm.Main</mainClass>  
                         </transformer>  
-                        <transformer  
-                            implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">  
+                        <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">  
                             <resource>META-INF/spring.schemas</resource>  
                         </transformer>  
                     </transformers>  
