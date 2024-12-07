@@ -150,7 +150,7 @@
     <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-webmvc</artifactId>
-        <version>4.3.7.RELEASE</version>
+        <version>6.0.0</version>
     </dependency>
     <!-- 4)Spring test -->
     <dependency>
@@ -187,16 +187,13 @@
                 </goals>  
                 <configuration>  
                     <transformers>  
-                        <transformer  
-                            implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">  
+                        <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">  
                             <resource>META-INF/spring.handlers</resource>  
                         </transformer>  
-                        <transformer  
-                            implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">  
+                        <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">  
                             <mainClass>com.maven.ssm.Main</mainClass>  
                         </transformer>  
-                        <transformer  
-                            implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">  
+                        <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">  
                             <resource>META-INF/spring.schemas</resource>  
                         </transformer>  
                     </transformers>  
